@@ -1,0 +1,33 @@
+{
+  "name": "nsqjs-streams",
+  "version": "0.1.0",
+  "description": "Wraps NSQ Reader and Writer clients in NodeJS streams.",
+  "main": "lib/client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bondza/nsqjs-streams.git"
+  },
+  "keywords": [
+    "nsq",
+    "nsq",
+    "client",
+    "nsq",
+    "client",
+    "stream",
+    "nsqjs",
+    "stream",
+    "streams"
+  ],
+  "author": "Fredrik Bondza <fredrikbondza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bondza/nsqjs-streams/issues"
+  },
+  "homepage": "https://github.com/Bondza/nsqjs-streams",
+  "dependencies": {
+    "nsqjs": "0.7.x"
+  }
+}
