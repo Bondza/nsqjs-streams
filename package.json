@@ -29,5 +29,8 @@
   "homepage": "https://github.com/Bondza/nsqjs-streams",
   "dependencies": {
     "nsqjs": "0.7.x"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
   }
 }
