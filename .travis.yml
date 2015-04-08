@@ -1,0 +1,10 @@
+install:
+  - sudo apt-get install docker.io
+  - sudo docker pull nsqio/nsq:v0.3.2
+  - sudo docker run -d --name nsqlookupd -p 4160:4160 -p 4161:4161 nsqio/nsq:v0.3.2 /nsqlookupd
+  - sudo docker run -d --name nsqd --link nsqlookupd:lookupd -p 4150:4150 -p 4151:4151 nsqio/nsq:v0.3.2 /nsqd -lookupd-tcp-address=lookupd:4160
+  - npm install
+
+script:
+  - npm test
+
