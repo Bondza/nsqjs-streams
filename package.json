@@ -4,7 +4,7 @@
   "description": "Wraps NSQ Reader and Writer clients in NodeJS streams.",
   "main": "lib/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,9 @@
   },
   "engines": {
     "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^5.2.0"
   }
 }
