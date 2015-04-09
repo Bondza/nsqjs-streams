@@ -8,8 +8,8 @@ install:
   - npm install
 
 before_script:
-  - nsq/bin/nsqlookupd &
-  - nsq/bin/nsqd -lookupd-tcp-address=localhost:4160 &
+  - nsq/bin/nsqlookupd >/dev/null 2>&1 &
+  - nsq/bin/nsqd -lookupd-tcp-address=localhost:4160 >/dev/null 2>&1 &
 
 script:
   - npm test
