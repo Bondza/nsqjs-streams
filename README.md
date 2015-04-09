@@ -1,4 +1,4 @@
-# nsqjs-streams
+# nsqjs-streams [![Build Status](https://travis-ci.org/Bondza/nsqjs-streams.svg?branch=master)](https://travis-ci.org/Bondza/nsqjs-streams)
 
 Wraps an [nsqjs](https://www.npmjs.com/package/nsqjs) Reader and Writer client in NodeJS streams.
 
