@@ -1,6 +1,6 @@
 {
   "name": "nsqjs-streams",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wraps NSQ Reader and Writer clients in NodeJS streams.",
   "main": "lib/client.js",
   "scripts": {
