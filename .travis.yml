@@ -12,5 +12,5 @@ before_script:
   - nsq/bin/nsqd -lookupd-tcp-address=localhost:4160 >/dev/null 2>&1 &
 
 script:
+  - npm run lint
   - npm test
-
