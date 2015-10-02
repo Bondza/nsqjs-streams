@@ -1,6 +1,6 @@
 {
   "name": "nsqjs-streams",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Wraps NSQ Reader and Writer clients in NodeJS streams.",
   "main": "lib/client.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "nsqjs": "^0.7.7"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.10.40"
   },
   "devDependencies": {
     "eslint": "^1.5.1",
