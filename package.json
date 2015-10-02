@@ -34,7 +34,16 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
+    "eslint": "^1.5.1",
     "mocha": "^2.2.4",
     "should": "^5.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-underscore-dangle": 0
+    }
   }
 }
