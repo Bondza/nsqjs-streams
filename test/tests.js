@@ -37,12 +37,7 @@ describe("Writer", function () {
 
             reader = new nsqStreams.Reader("test_topic", "test_channel", { lookupdHTTPAddresses: NSQLOOKUPD_HOST + ":" + NSQLOOKUPD_PORT });
             reader.on("nsqd_connected", function () {
-                console.log("nsqd_connected");
                 done();
-            });
-
-            reader.on("error", function (error) {
-                done(error);
             });
         });
 
@@ -50,7 +45,7 @@ describe("Writer", function () {
             reader.on("readable", function () {
                 var data = reader.read();
 
-                should(data).not.be.null.and.be.a.string;
+                should(data).be.a.string;
 
                 data = JSON.parse(data);
 
@@ -100,7 +95,7 @@ describe("Reader", function () {
             reader.on("readable", function () {
                 var data = reader.read();
 
-                should(data).not.be.null.and.be.a.string;
+                should(data).be.a.string;
 
                 data = JSON.parse(data);
 
