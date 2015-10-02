@@ -5,6 +5,7 @@ node_js: "0.10"
 install:
   - mkdir nsq
   - curl -s 'https://s3.amazonaws.com/bitly-downloads/nsq/nsq-0.3.2.linux-amd64.go1.4.1.tar.gz' | tar --strip-components 1 -C nsq -xvz
+  - npm install -g npm@^3.3.5
   - npm install
 
 before_script:
